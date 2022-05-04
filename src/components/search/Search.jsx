@@ -1,11 +1,17 @@
 import React from "react";
 // Css
-import './Search.scss'
+import "./Search.scss";
 
-const Search = () => {
+const Search = ({ search, setSearch }) => {
   return (
     <div className="search">
-      <input type="text" className="search__input" placeholder="Поиск" />
+      <input
+        type="text"
+        className="search__input"
+        placeholder="Поиск"
+        value={search}
+        onChange={(e) => setSearch(e.target.value)}
+      />
     </div>
   );
 };
