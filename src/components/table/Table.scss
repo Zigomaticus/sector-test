@@ -1,0 +1,50 @@
+.table {
+  width: 1076px;
+
+  &__footer {
+    height: 54px;
+    background-color: #474955;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 23px;
+    align-items: center;
+
+    &-title {
+      margin-right: 150px;
+      font-size: 14px;
+    }
+
+    &-discription {
+      margin-right: 248px;
+    }
+  }
+
+  &__item {
+    min-height: 82px;
+    border: 1px solid #e3e6ec;
+    display: flex;
+    align-items: center;
+
+    &-id {
+      width: 10%;
+      height: 82px;
+      border-right: 1px solid #e3e6ec;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
+
+    &-title {
+      width: 50%;
+      border-right: 1px solid #e3e6ec;
+      padding: 0 10px;
+    }
+
+    &-discription {
+      width: 40%;
+      padding: 0 10px;
+    }
+  }
+}

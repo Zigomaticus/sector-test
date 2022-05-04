@@ -1,0 +1,13 @@
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 800px;
+  margin-top: 18px;
+
+  &__back,
+  &__straight {
+    font-size: 24px;
+    color: #474955;
+  }
+}

@@ -1,0 +1,25 @@
+.search {
+  &__input {
+    width: 631px;
+    height: 52px;
+    background-color: #5a5c66;
+    border: none;
+    margin-bottom: 15px;
+    background-image: url("../../assets/search.png");
+    background-repeat: no-repeat;
+    background-position: 95% 50%;
+
+    &:focus {
+      color: #fff;
+      font-size: 14px;
+      padding-left: 26px;
+      outline: none;
+    }
+
+    &::placeholder {
+      color: #b2b7bf;
+      font-size: 14px;
+      padding-left: 26px;
+    }
+  }
+}
