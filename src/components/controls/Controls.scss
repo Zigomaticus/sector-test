@@ -2,12 +2,30 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 800px;
+  width: 980px;
   margin-top: 18px;
 
   &__back,
   &__straight {
     font-size: 24px;
     color: #474955;
+    cursor: pointer;
+  }
+
+  .wrapper {
+    width: 200px;
+    display: flex;
+    font-size: 18px;
+    font-weight: 700;
+    font-style: italic;
+
+    .controls__pagination {
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .active__page {
+      color: greenyellow;
+    }
   }
 }

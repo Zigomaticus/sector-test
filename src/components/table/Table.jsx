@@ -14,48 +14,50 @@ const Table = ({ filteredPosts, setPosts }) => {
   };
 
   return (
-    <div className="table">
-      <div className="table__footer">
-        <div className="table__footer-id">
-          ID
-          <span onClick={() => sortNumber()}>
-            <img src={sort} alt="Sorting" />
-          </span>
-        </div>
-        <div className="table__footer-title">
-          Заголовок
-          <span onClick={() => sortAlphabet()}>
-            <img src={sort} alt="Sorting" />
-          </span>
-        </div>
-        <div className="table__footer-discription">
-          Описание
-          <span onClick={() => sortAlphabet()}>
-            <img src={sort} alt="Sorting" />
-          </span>
-        </div>
-      </div>
-      {filteredPosts.length === 0 ? (
-        <div
-          style={{
-            fontSize: "30px",
-            textAlign: "center",
-            marginTop: "30px",
-            color: "#474955",
-          }}
-        >
-          Нет совпадений по поиску
-        </div>
-      ) : (
-        filteredPosts.map(({ id, title, body }) => (
-          <div className="table__item" key={id}>
-            <div className="table__item-id">{id}</div>
-            <div className="table__item-title">{title}</div>
-            <div className="table__item-discription">{body}</div>
+    <>
+      <div className="table">
+        <div className="table__footer">
+          <div className="table__footer-id">
+            ID
+            <span onClick={() => sortNumber()}>
+              <img src={sort} alt="Sorting" />
+            </span>
           </div>
-        ))
-      )}
-    </div>
+          <div className="table__footer-title">
+            Заголовок
+            <span onClick={() => sortAlphabet()}>
+              <img src={sort} alt="Sorting" />
+            </span>
+          </div>
+          <div className="table__footer-discription">
+            Описание
+            <span onClick={() => sortAlphabet()}>
+              <img src={sort} alt="Sorting" />
+            </span>
+          </div>
+        </div>
+        {filteredPosts.length === 0 ? (
+          <div
+            style={{
+              fontSize: "30px",
+              textAlign: "center",
+              marginTop: "30px",
+              color: "#474955",
+            }}
+          >
+            Нет совпадений по поиску
+          </div>
+        ) : (
+          filteredPosts.map(({ id, title, body }) => (
+            <div className="table__item" key={id}>
+              <div className="table__item-id">{id}</div>
+              <div className="table__item-title">{title}</div>
+              <div className="table__item-discription">{body}</div>
+            </div>
+          ))
+        )}
+      </div>
+    </>
   );
 };
 
