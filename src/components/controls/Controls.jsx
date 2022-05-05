@@ -5,7 +5,10 @@ import "./Controls.scss";
 const Controls = ({ pagesArray, page, changePage }) => {
   return (
     <div className="controls">
-      <div className="controls__back" onClick={() => changePage(page - 1)}>
+      <div
+        className="controls__back"
+        onClick={page < 2 ? null : () => changePage(page - 1)}
+      >
         Назад
       </div>
       <div className="wrapper">
@@ -22,7 +25,10 @@ const Controls = ({ pagesArray, page, changePage }) => {
           </div>
         ))}
       </div>
-      <div className="controls__straight" onClick={() => changePage(page + 1)}>
+      <div
+        className="controls__straight"
+        onClick={page > 4 ? null : () => changePage(page + 1)}
+      >
         Вперёд
       </div>
     </div>

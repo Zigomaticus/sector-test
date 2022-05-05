@@ -43,8 +43,11 @@
 
     &-title {
       width: 50%;
+      height: 82px;
       border-right: 1px solid #e3e6ec;
       padding: 0 10px;
+      display: flex;
+      align-items: center;
     }
 
     &-discription {

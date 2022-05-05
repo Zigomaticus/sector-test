@@ -27,8 +27,8 @@ const App = () => {
   async function fetchPosts() {
     const response = await PostService.getAll(limit, page);
     setPosts(response.data);
-    const totalCount = response.headers["x-total-count"];
-    setTotalPages(Math.ceil(totalCount / limit));
+    const totalCount = response.headers["x-total-count"] / 2;
+    setTotalPages(totalCount / limit);
   }
 
   useEffect(() => {

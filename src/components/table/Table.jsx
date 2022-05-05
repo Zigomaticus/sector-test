@@ -1,6 +1,7 @@
 import React from "react";
 // Assets
 import sort from "../../assets/sort.png";
+import NoMatches from "../noMatches/NoMatches";
 // Css
 import "./Table.scss";
 
@@ -37,16 +38,7 @@ const Table = ({ filteredPosts, setPosts }) => {
           </div>
         </div>
         {filteredPosts.length === 0 ? (
-          <div
-            style={{
-              fontSize: "30px",
-              textAlign: "center",
-              marginTop: "30px",
-              color: "#474955",
-            }}
-          >
-            Нет совпадений по поиску
-          </div>
+          <NoMatches />
         ) : (
           filteredPosts.map(({ id, title, body }) => (
             <div className="table__item" key={id}>
