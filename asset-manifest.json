@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sector-test/static/css/main.0a10a807.css",
+    "main.js": "/sector-test/static/js/main.3b2f3cb1.js",
+    "index.html": "/sector-test/index.html",
+    "main.0a10a807.css.map": "/sector-test/static/css/main.0a10a807.css.map",
+    "main.3b2f3cb1.js.map": "/sector-test/static/js/main.3b2f3cb1.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a10a807.css",
+    "static/js/main.3b2f3cb1.js"
+  ]
+}
